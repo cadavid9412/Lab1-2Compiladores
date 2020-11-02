@@ -39,16 +39,17 @@ class listaSimpleLigada:
             return False
         
     def primerNodo(self):
-        return primero
+        return str(self.primero)
     
     def ultimoNodo(self):
-        return ultimo
+        return str(self.ultimo)
     
     def finDeRecorrido(self,nodoSimple ):
         if nodoSimple=="null":
             return True
         else: 
             return False
+    
     def recorre (self):
         nodo=nodoSimple(0,0,1,0)
         while finDeRecorrido(nodo)==False:
@@ -57,7 +58,7 @@ class listaSimpleLigada:
     
     def insertar(self,listaSimpleLigada,nodoSimple):
         nodo=nodoSimple(0,0,ultimo,0)
-        conectar(ultimo con nuevo)
+        
     
     def conectar(self,nodoSimple,nodoSimple2):
         nodoSimple.asignaPosicionMemoria(nodoSimple2.retornPosicionMemoria())
@@ -79,26 +80,30 @@ class nodoSimple:
         self.posicionMemoria=posicionMemoria
         self.liga=liga
     
-    def retornaClase():
-        return clase;
-    def retornaValor():
-        return valor;
-    def retornaNodoSimple():
-        return nodoSimple;
-    def retornPosicionMemoria():
-        return posicionMemoria;
+    def retornaClase(self):
+        return str(self.clase);
+    
+    def retornaValor(self):
+        return str(self.valor);
+    
+    def retornaLiga(self):
+        return str(self.liga);
+    
+    def retornPosicionMemoria(self):
+        return str(self.posicionMemoria);
     
     def asignaClase(tipo):
         clase=tipo
     def asignaValor(tipo):
         valor=tipo
-    def asignaNodoSimple(tipo):
-        nodoSimple=tipo
+    def asignaLiga(tipo):
+        liga=tipo
     def asignaPosicionMemoria(tipo):
         posicionMemoria=tipo
     
     
     
+
     
     
     
