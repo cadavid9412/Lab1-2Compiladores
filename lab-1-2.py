@@ -24,12 +24,55 @@ class Automata:
 
 
 class listaSimpleLigada:
-    def __init__(self,linea1):
-        self.linea1=linea1
-
+    nodoSimple=0
+    primero=0
+    ultimo=0
+    
+    def __init__(self,primero,ultimo):
+        self.primero=0
+        self.ultimo=0
+        
+    def esVacia(self,primero):
+        if primero==0:
+            return True
+        else:
+            return False
+        
+    def primerNodo(self):
+        return primero
+    
+    def ultimoNodo(self):
+        return ultimo
+    
+    def finDeRecorrido(self,nodoSimple ):
+        if nodoSimple=="null":
+            return True
+        else: 
+            return False
+    def recorre (self):
+        nodo=nodoSimple(0,0,1,0)
+        while finDeRecorrido(nodo)==False:
+            print(nodo.retornPosicionMemoria())
+            print (nodo.retornaClase(),nodo.retornaValor())
+    
+    def insertar(self,listaSimpleLigada,nodoSimple):
+        nodo=nodoSimple(0,0,ultimo,0)
+        conectar(ultimo con nuevo)
+    
+    def conectar(self,nodoSimple,nodoSimple2):
+        nodoSimple.asignaPosicionMemoria(nodoSimple2.retornPosicionMemoria())
+        nodoSimple2.asignaPosicionMemoria(ultimo)
+        
+        
+        
+        
 
 class nodoSimple:
-    /*constructor*/
+    clase=0
+    valor=0
+    posicionMemoria=0
+    liga=0
+    
     def __init__(self,clase,valor,posicionMemoria,liga):
         self.clase=clase
         self.valor=valor 
